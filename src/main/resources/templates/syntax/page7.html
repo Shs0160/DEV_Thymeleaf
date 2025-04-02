@@ -6,8 +6,8 @@
 </head>
 <body>
   <input type="text" id="username" disabled>
-  <script>
-    const username = "hello";
+  <script th:inline="javascript">
+    const username = /*[[ ${username} ]]*/ "hello";
     const usernameEL = document.getElementById('username');
     usernameEL.value = username;
   </script>

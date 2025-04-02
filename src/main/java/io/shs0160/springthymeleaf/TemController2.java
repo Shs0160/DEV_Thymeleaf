@@ -68,10 +68,17 @@ public class TemController2 {
     }
 
     @GetMapping("/7")
-    public String syntaxPage7() {
+    public String syntaxPage7(Model model) {
+        model.addAttribute("username", "user1");
         return "/syntax/page7";
     }
 
+    @GetMapping("/8")
+    public String syntaxPage8(Model model) {
+        model.addAttribute("blue", "blue");
+        model.addAttribute("red", "red");
+        return "/syntax/page8";
+    }
 
 
 
