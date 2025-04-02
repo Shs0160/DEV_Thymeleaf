@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html
+        lang="en"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <th:block th:insert="~{fragments/common_headers::commomnHeader}">
+
+    </th:block>
+</head>
+<body class="min-h-screen flex flex-col">
+    <div th:replace="~{fragments/top_bar::top_bar}"></div>
+    <div class="container mx-auto mt-8 flex-grow" layout:fragment="contents">
+
+    </div>
+    <footer th:replace="~{fragments/footer::footer}"></footer>
+</body>
+</html>
