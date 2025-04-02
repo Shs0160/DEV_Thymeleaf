@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>문법 페이지4</title>
+  <style>
+    .content-con{
+      margin-top: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <div>
+    <h3>
+      <form method="post" th:object="${post}">
+        <input type="hidden" value="user1" th:field="*{author}">
+        <div>
+          <span> 제목:
+            <input type="text" th:field="*{title}">
+          </span>
+        </div>
+        <div class="content-con">
+          <textarea th:field="*{contents}" cols="30" rows="10">
+          </textarea>
+        </div>
+        <div>
+          <button type="submit">
+            작성
+          </button>
+        </div>
+      </form>
+    </h3>
+  </div>
+</body>
+</html>
