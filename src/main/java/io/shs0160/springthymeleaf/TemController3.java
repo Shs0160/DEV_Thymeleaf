@@ -29,8 +29,8 @@ public class TemController3 {
     public String showLayout4(Model model) {
 
         model.addAttribute("isLogin", true);
-        model.addAttribute("post", new Post(1L, "h1", "h2", "h2"));
-
+        model.addAttribute("post"
+                , new Post(1L, "안녕하세요!", "관리자", "글을 작성해 보았습니다~!"));
         return "/pages/layout_page_4";
     }
 
